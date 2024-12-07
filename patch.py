@@ -16,7 +16,8 @@ for path in glob.glob('scratch-gui/build/js/*.js'):
   print(f'Patching JS {path}')
   with open(path, 'r') as f:
     contents = f.read()
-    contents = contents.replace('https://trampoline.turbowarp.org', 'https://trampoline.turbowarp.xyz')
+    #contents = contents.replace('https://trampoline.turbowarp.org', 'https://trampoline.turbowarp.xyz')
+    contents = contents.replace('https://trampoline.turbowarp.org', 'https://sy-gato.github.io/turbowarp-mirror-test')
   with open(path, 'w') as f:
     f.write(contents)
 
